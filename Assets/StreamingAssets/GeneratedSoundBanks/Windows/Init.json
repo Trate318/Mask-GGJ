@@ -1,0 +1,141 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{0DABAF7A-6DEF-AB7B-1174-8B236F29C67C}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{74E2CAD1-3A49-4B29-A61B-57A5D421AE48}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{E4A9B26A-DAE7-4E90-A648-476E795627E5}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "85412153",
+      "Name": "Ambience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambience",
+      "GUID": "{CB80259A-BA88-4B73-8B92-0F5E924443C4}"
+     },
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{02E76402-942A-4B0B-BD9E-EDA249BD5E66}"
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3930136735",
+      "Name": "Dialogue",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Dialogue",
+      "GUID": "{330B1CF0-A1F3-426D-B49C-B4582D6B41A1}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
+      "GUID": "{DECAD354-0D4D-4CB1-A676-1AF0042B6279}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "969816968",
+      "Name": "DialogueDucking",
+      "ObjectPath": "\\Game Parameters\\RTPCs\\DialogueDucking",
+      "GUID": "{4180E54D-F2FE-4817-A9EA-BF6BD81B5BC0}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "574587799",
+      "Name": "GameplayStates",
+      "ObjectPath": "\\States\\States\\GameplayStates",
+      "GUID": "{EBCC5A9F-E355-4F7B-A917-6B19464E3ED8}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\GameplayStates\\None",
+        "GUID": "{8DF8B70A-52F4-41E5-8642-41EC71706653}"
+       },
+       {
+        "Id": "949836589",
+        "Name": "Story1",
+        "ObjectPath": "\\States\\States\\GameplayStates\\Story1",
+        "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
+       },
+       {
+        "Id": "949836590",
+        "Name": "Story2",
+        "ObjectPath": "\\States\\States\\GameplayStates\\Story2",
+        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+       },
+       {
+        "Id": "949836591",
+        "Name": "Story3",
+        "ObjectPath": "\\States\\States\\GameplayStates\\Story3",
+        "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
+       }
+      ]
+     },
+     {
+      "Id": "777429653",
+      "Name": "GameStates",
+      "ObjectPath": "\\States\\States\\GameStates",
+      "GUID": "{98B91441-C457-4B3F-B37D-E2DC3E44969D}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\GameStates\\None",
+        "GUID": "{2F235C93-E4C0-4B45-89EE-03E957F51B93}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\GameStates\\Menu",
+        "GUID": "{F97835F5-577C-4E6B-B625-40A98347A748}"
+       },
+       {
+        "Id": "2782712965",
+        "Name": "Level",
+        "ObjectPath": "\\States\\States\\GameStates\\Level",
+        "GUID": "{659319CE-4435-49A4-B065-EB18E57DBCCC}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0A76EF4A-2FBA-5A04-EE79-A5A99C39991C}"
+ }
+}
