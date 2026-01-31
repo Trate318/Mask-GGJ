@@ -1,31 +1,58 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 // all time units are in miliseconds unless specified.
+
+public class AudioClip
+{
+    public String audioPath;
+
+    public int GetLength() { return 0; }
+
+
+}
 
 public class Redactions
 {
     // Resource AudioClip;
-    List<Section> sections;
+    public List<Section> Sections;
 
-    public Redactions() {}
+    public Redactions()
+    {
+        Sections = new List<Section>();
+    }
 
     //TODO: merge any overlapping sections on add
     public void AddSection(Section section)
     {
-        sections.Append(section);
+        Sections.Add(section);
     }
 
-    public Redactions Subtract(Redactions redactions) {
+    public void RemoveSection(Section section)
+    {
+        for (int i = 0; i < Sections.Count; i++)
+        {
+            Section s = Sections[i];
+            if (s.Equals(section))
+            {
+                Sections.Remove(section);
+            }
+        }
+    }
+
+    public Redactions Subtract(Redactions redactions)
+    {
         Redactions result = new Redactions();
 
-        foreach (Section thisSection in sections)
+        foreach (Section thisSection in Sections)
         {
-            foreach (Section section in redactions.sections)
+            foreach (Section section in redactions.Sections)
             {
                 List<Section> subtractedSections = thisSection.Subtract(section);
-                foreach (Section subtractedSection in subtractedSections) {
+                foreach (Section subtractedSection in subtractedSections)
+                {
                     result.AddSection(subtractedSection);
                 }
             }
@@ -39,9 +66,9 @@ public struct Section
 {
     // start and length should be positive only
 
-    int Start;
-    int Length;
-    int End => Start + Length;
+    public int Start;
+    public int Length;
+    public int End => Start + Length;
 
     public Section(int start, int length)
     {
@@ -92,5 +119,24 @@ public struct Section
         {
             return new List<Section>() { };
         }
+    }
+
+    public override string ToString()
+    {
+        return $"({Start} -> {End} : {Length})";
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (!(obj is Section)) { return false; }
+
+        Section section = (Section)obj;
+
+        return Start == section.Start && Length == section.Length;
+    }
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
     }
 }
