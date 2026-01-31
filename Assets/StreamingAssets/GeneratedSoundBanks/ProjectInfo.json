@@ -5,7 +5,7 @@
    "GUID": "{EA935E27-799D-4B6F-AE47-44A81D2781A8}",
    "Generator": "2025.1.4.9062"
   },
-  "CacheRoot": "../../../../../WwiseProjects/MASK_Wwise_Project/.cache",
+  "CacheRoot": "../.cache",
   "Platforms": [
    {
     "Name": "Windows",
@@ -24,6 +24,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{29125D13-8EE6-59EC-6708-40CC7D25DFEB}"
+  "FileHash": "{49AD4769-2A0E-7CD7-C540-3951DA27620E}"
  }
 }

@@ -1,14 +1,22 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	574587799	GameplayStates			\States\GameplayStates	
+	777429653	GameStates			\States\GameStates	
 
 State	ID	Name	State Group			Notes
 	748895195	None	GameplayStates			
 	949836589	Story1	GameplayStates			
 	949836590	Story2	GameplayStates			
 	949836591	Story3	GameplayStates			
+	748895195	None	GameStates			
+	2607556080	Menu	GameStates			
+	2782712965	Level	GameStates			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Main Audio Bus\Ambience	
+	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	3930136735	Dialogue			\Default Work Unit\Main Audio Bus\Dialogue	
+	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

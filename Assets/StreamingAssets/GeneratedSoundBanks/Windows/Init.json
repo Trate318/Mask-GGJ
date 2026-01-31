@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C5FA16AF-5B88-9F59-999C-14603B3D78FB}",
+    "Hash": "{0DABAF7A-6DEF-AB7B-1174-8B236F29C67C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,10 +36,42 @@
     },
     "Busses": [
      {
+      "Id": "85412153",
+      "Name": "Ambience",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambience",
+      "GUID": "{CB80259A-BA88-4B73-8B92-0F5E924443C4}"
+     },
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{02E76402-942A-4B0B-BD9E-EDA249BD5E66}"
+     },
+     {
       "Id": "2246998526",
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3930136735",
+      "Name": "Dialogue",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Dialogue",
+      "GUID": "{330B1CF0-A1F3-426D-B49C-B4582D6B41A1}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
+      "GUID": "{DECAD354-0D4D-4CB1-A676-1AF0042B6279}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "969816968",
+      "Name": "DialogueDucking",
+      "ObjectPath": "\\Game Parameters\\RTPCs\\DialogueDucking",
+      "GUID": "{4180E54D-F2FE-4817-A9EA-BF6BD81B5BC0}"
      }
     ],
     "StateGroups": [
@@ -74,10 +106,36 @@
         "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
        }
       ]
+     },
+     {
+      "Id": "777429653",
+      "Name": "GameStates",
+      "ObjectPath": "\\States\\States\\GameStates",
+      "GUID": "{98B91441-C457-4B3F-B37D-E2DC3E44969D}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\GameStates\\None",
+        "GUID": "{2F235C93-E4C0-4B45-89EE-03E957F51B93}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\GameStates\\Menu",
+        "GUID": "{F97835F5-577C-4E6B-B625-40A98347A748}"
+       },
+       {
+        "Id": "2782712965",
+        "Name": "Level",
+        "ObjectPath": "\\States\\States\\GameStates\\Level",
+        "GUID": "{659319CE-4435-49A4-B065-EB18E57DBCCC}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{DC8702FC-425A-8F46-5104-AA7EC1D340D3}"
+  "FileHash": "{0A76EF4A-2FBA-5A04-EE79-A5A99C39991C}"
  }
 }
