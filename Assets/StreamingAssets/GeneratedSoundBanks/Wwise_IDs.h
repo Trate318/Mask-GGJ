@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_DX_BOSSTALKING = 4255932248U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING1 = 2925139897U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING2 = 2925139898U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING3 = 2925139899U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_AWFUL = 1822738380U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_GREAT = 3315181258U;
         static const AkUniqueID PLAY_HIPPO01 = 567901711U;

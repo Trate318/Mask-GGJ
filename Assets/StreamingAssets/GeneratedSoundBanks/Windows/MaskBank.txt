@@ -9,11 +9,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1822738380	Play_DX_BossTalking_Awful			\Default Work Unit\Dialogue Events\Play_DX_BossTalking_Awful	
 	1988521271	Stop_SFX_Redaction			\Default Work Unit\SFX Events\Stop_SFX_Redaction	
 	2289732960	Set_State_Gameplay			\Default Work Unit\Level Events\Set_State_Gameplay	
+	2925139897	Play_DX_BossTalking1			\Default Work Unit\Dialogue Events\Play_DX_BossTalking1	
+	2925139898	Play_DX_BossTalking2			\Default Work Unit\Dialogue Events\Play_DX_BossTalking2	
+	2925139899	Play_DX_BossTalking3			\Default Work Unit\Dialogue Events\Play_DX_BossTalking3	
 	3165068674	Set_State_Story3			\Default Work Unit\Music Events\Set_State_Story3	
 	3165068675	Set_State_Story2			\Default Work Unit\Music Events\Set_State_Story2	
 	3315181258	Play_DX_BossTalking_Great			\Default Work Unit\Dialogue Events\Play_DX_BossTalking_Great	
 	3552864623	Play_SFX_EmailSound			\Default Work Unit\SFX Events\Play_SFX_EmailSound	
-	4255932248	Play_DX_BossTalking			\Default Work Unit\Dialogue Events\Play_DX_BossTalking	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	574587799	GameplayStates			\States\GameplayStates	
@@ -33,11 +35,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20192231	AMB_Roomtone	.cache\A4\{A464ECEE-23C7-F554-5510-309C91D497CB}.wem		\Containers\Ambience Work Unit\AMB_Roomtone\AMB_Roomtone		7913360
+	85331106	DX_BossTalking3	.cache\BF\{BF3E7B4E-84D4-476D-4177-A9517F4F993E}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking3		4214896
 	322443982	SFX_Redaction	.cache\02\{02C85F86-1FCB-9A50-2A2C-0E180A22D27E}.wem		\Containers\SFX Work Unit\SFX_Redaction\SFX_Redaction		383996
 	383154395	CD_EjectNoise	.cache\8B\{8BACF596-BBCD-8E85-B301-4F20DEC2D00C}.wem		\Containers\SFX Work Unit\SFX_TakeOutCD\CD_EjectNoise		174098
 	562037723	MouseClick#1	.cache\69\{696E93DC-A1AE-9FBC-44E1-22C86053140C}.wem		\Containers\SFX Work Unit\SFX_MouseClick\MouseClick#1		18098
+	633817798	DX_BossTalking2	.cache\BA\{BA731E95-4CCF-687D-B68E-EB9A3574E773}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking2		2425484
 	677078763	SFX_Voicemail	.cache\6A\{6A2766B5-D98E-87B3-AF0A-BC3D9C6CFC04}.wem		\Containers\SFX Work Unit\SFX_Voicemail\SFX_Voicemail		126098
 	832712899	MouseClick#2	.cache\F6\{F6B78C20-43DE-E0F8-ADE4-0C6519666CE0}.wem		\Containers\SFX Work Unit\SFX_MouseClick\MouseClick#2		18098
+	834930096	DX_BossTalking1	.cache\BD\{BDC1CA88-9FE6-2DE3-5A97-381125D868F6}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking1		6607388
 	890992138	Hippo01	.cache\DF\{DF8876B2-63F0-C669-7CB6-E2F12609A4FD}.wem		\Containers\Dialogue Work Unit\DX_Monsters\Hippo01		36603648
 	898373922	SFX_EmailSound	.cache\6B\{6B59A4B5-B4F0-D887-6592-4B77A321FFCE}.wem		\Containers\SFX Work Unit\SFX_EmailSound\SFX_EmailSound		28976
 	1025669392	CD_EjectButton	.cache\7F\{7FB11FFE-4176-069F-6BCC-B749EA765F86}.wem		\Containers\SFX Work Unit\SFX_TakeOutCD\CD_EjectButton		48098

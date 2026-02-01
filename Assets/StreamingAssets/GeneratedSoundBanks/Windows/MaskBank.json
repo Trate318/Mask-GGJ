@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{4A640B90-77CF-83D4-035F-47FAA240FD00}",
+    "Hash": "{EDCBA61C-076D-3F24-F7CA-3A819753C1A1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "AMB_Roomtone.wav",
       "CachePath": "A4/{A464ECEE-23C7-F554-5510-309C91D497CB}.wem"
+     },
+     {
+      "Id": "85331106",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DX_BossTalking3.wav",
+      "CachePath": "BF/{BF3E7B4E-84D4-476D-4177-A9517F4F993E}.wem"
      },
      {
       "Id": "322443982",
@@ -48,6 +56,14 @@
       "CachePath": "69/{696E93DC-A1AE-9FBC-44E1-22C86053140C}.wem"
      },
      {
+      "Id": "633817798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DX_BossTalking2.wav",
+      "CachePath": "BA/{BA731E95-4CCF-687D-B68E-EB9A3574E773}.wem"
+     },
+     {
       "Id": "677078763",
       "Language": "SFX",
       "Streaming": "false",
@@ -62,6 +78,14 @@
       "Location": "Memory",
       "ShortName": "MouseClick#2.wav",
       "CachePath": "F6/{F6B78C20-43DE-E0F8-ADE4-0C6519666CE0}.wem"
+     },
+     {
+      "Id": "834930096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DX_BossTalking1.wav",
+      "CachePath": "BD/{BDC1CA88-9FE6-2DE3-5A97-381125D868F6}.wem"
      },
      {
       "Id": "890992138",
@@ -90,13 +114,46 @@
     ],
     "Events": [
      {
-      "Id": "4255932248",
-      "Name": "Play_DX_BossTalking",
-      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_BossTalking",
+      "Id": "2925139897",
+      "Name": "Play_DX_BossTalking1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_BossTalking1",
       "GUID": "{44764BB3-3223-4D7A-A40F-7C1B695AF75B}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "34.41298",
+      "DurationMax": "34.41298",
+      "MediaRefs": [
+       {
+        "Id": "834930096"
+       }
+      ]
+     },
+     {
+      "Id": "2925139898",
+      "Name": "Play_DX_BossTalking2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_BossTalking2",
+      "GUID": "{6B5CC065-44D5-4C01-9D12-67D8CAC5E51A}",
+      "DurationType": "OneShot",
+      "DurationMin": "12.632229",
+      "DurationMax": "12.632229",
+      "MediaRefs": [
+       {
+        "Id": "633817798"
+       }
+      ]
+     },
+     {
+      "Id": "2925139899",
+      "Name": "Play_DX_BossTalking3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_BossTalking3",
+      "GUID": "{0420A66E-069F-430F-89ED-972B8D14301A}",
+      "DurationType": "OneShot",
+      "DurationMin": "21.952084",
+      "DurationMax": "21.952084",
+      "MediaRefs": [
+       {
+        "Id": "85331106"
+       }
+      ]
      },
      {
       "Id": "1822738380",
@@ -382,6 +439,6 @@
     ]
    }
   ],
-  "FileHash": "{FC03A4B9-63D4-4740-6611-41BC26FD9509}"
+  "FileHash": "{6E504520-CA41-A1D0-F9AD-6F44C3D9FEBE}"
  }
 }
