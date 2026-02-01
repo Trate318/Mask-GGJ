@@ -43,6 +43,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20192231	AMB_Roomtone	.cache\A4\{A464ECEE-23C7-F554-5510-309C91D497CB}.wem		\Containers\Ambience Work Unit\AMB_Roomtone\AMB_Roomtone		7913360
+	46719167	mx_ambience_v01	.cache\A9\{A91D9533-94A7-911E-8A6C-C520D38926C5}.wem		\Containers\Music Work Unit\Main Switch\Gameplay Switch\MX_Track1\mx_ambience_v01\mx_ambience_v01		16649236
 	54995957	Sharpie_Short#2	.cache\90\{90B454C1-5E22-A2BF-B474-8D8E866F3884}.wem		\Containers\SFX Work Unit\SFX_SharpieDraw\Sharpie_Short#2		18098
 	85331106	DX_BossTalking3	.cache\BF\{BF3E7B4E-84D4-476D-4177-A9517F4F993E}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking3		4214896
 	146276237	KeyboardClick#4	.cache\D1\{D18F2DC3-A7E0-2949-B04A-202423B5423D}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#4		30098
@@ -62,6 +63,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	565890679	Envelope_Thud #2 V2	.cache\73\{73F42DC6-FED0-3E5F-D296-223618BB04A6}.wem		\Containers\SFX Work Unit\SFX_ThrowEnvelope\Envelope_Thud #2 V2		66098
 	633817798	DX_BossTalking2	.cache\BA\{BA731E95-4CCF-687D-B68E-EB9A3574E773}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking2		2425484
 	677078763	SFX_Voicemail	.cache\6A\{6A2766B5-D98E-87B3-AF0A-BC3D9C6CFC04}.wem		\Containers\SFX Work Unit\SFX_Voicemail\SFX_Voicemail		126098
+	778333799	mx_titleScreen_v01	.cache\A4\{A4B8F377-02B4-4E96-C32F-F2B8C75ED2BA}.wem		\Containers\Music Work Unit\Main Switch\MX_Menu\mx_titleScreen_v01\mx_titleScreen_v01		9833588
 	832712899	MouseClick#2	.cache\F6\{F6B78C20-43DE-E0F8-ADE4-0C6519666CE0}.wem		\Containers\SFX Work Unit\SFX_MouseClick\MouseClick#2		18098
 	834930096	DX_BossTalking1	.cache\BD\{BDC1CA88-9FE6-2DE3-5A97-381125D868F6}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking1		6607388
 	875631644	Phone pick up V3	.cache\C8\{C8AE7A22-2CC6-781A-0D27-F82EAE2E229F}.wem		\Containers\SFX Work Unit\SFX_PickupPhone\Phone pick up V3		176496
