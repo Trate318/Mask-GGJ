@@ -827,7 +827,31 @@ MonoBehaviour:
     m_ActionId: 15cef263-9014-4fd5-94d9-4e4a6234a6ef
     m_ActionName: 'UI/Cancel[/Keyboard/escape]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5694499066488799219}
+        m_TargetAssemblyTypeName: RedactionHandler, Assembly-CSharp
+        m_MethodName: OnPositionUpdateHELLO
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7612244871318192924}
+        m_TargetAssemblyTypeName: RedactionHandler, Assembly-CSharp
+        m_MethodName: OnPositionUpdateHELLO
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 32b35790-4ed0-4e9a-aa41-69ac6d629449
     m_ActionName: 'UI/Point[/Mouse/position,/Pen/position]'
   - m_PersistentCalls:
@@ -1681,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &886519003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1721,7 +1745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &918895422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3414,7 +3438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7a8f6449f40ce4280951ff7379420e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedactionHandler
-  interactableScreen: {fileID: 0}
+  interactableScreen: {fileID: 1087887723}
   RedactionGameObject: {fileID: 1331474438567543251, guid: ce3f938226c1c67429b44c9986dbdc64, type: 3}
   goalHandler: {fileID: 0}
 --- !u!114 &7465326939330624286
@@ -3459,7 +3483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7a8f6449f40ce4280951ff7379420e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedactionHandler
-  interactableScreen: {fileID: 0}
+  interactableScreen: {fileID: 1087887723}
   RedactionGameObject: {fileID: 1331474438567543251, guid: 2adb21ad25d268e4f9391c08a5efbdf6, type: 3}
   goalHandler: {fileID: 0}
 --- !u!224 &7726403326730331905
