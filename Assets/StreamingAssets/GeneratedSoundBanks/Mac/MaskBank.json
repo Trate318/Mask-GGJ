@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{D55CF421-FD71-3CFE-4BFD-29A2B0F239E4}",
+    "Hash": "{FCFC6632-406E-E03B-5755-D7D2FD0E3FD4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -62,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "KeyboardClick#3.wav",
       "CachePath": "30/{303D80E3-1F9D-FDFE-6862-07D1DED653FB}.wem"
+     },
+     {
+      "Id": "243111488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "calamity1.wav",
+      "CachePath": "B1/{B1928832-DC46-A30E-0E55-4266711A8C85}.wem"
      },
      {
       "Id": "310804727",
@@ -126,6 +134,14 @@
       "Location": "Memory",
       "ShortName": "Camera_Shutter V2.wav",
       "CachePath": "DA/{DA498742-F27A-E85E-DEB8-1CA304672688}.wem"
+     },
+     {
+      "Id": "458275108",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "calamity2.wav",
+      "CachePath": "36/{36532B42-A094-723B-6020-32437C93EB09}.wem"
      },
      {
       "Id": "479928004",
@@ -216,14 +232,6 @@
       "CachePath": "C8/{C8AE7A22-2CC6-781A-0D27-F82EAE2E229F}.wem"
      },
      {
-      "Id": "890992138",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Hippo01.wav",
-      "CachePath": "DF/{DF8876B2-63F0-C669-7CB6-E2F12609A4FD}.wem"
-     },
-     {
       "Id": "895913570",
       "Language": "SFX",
       "Streaming": "false",
@@ -238,6 +246,14 @@
       "Location": "Memory",
       "ShortName": "EmailNotification.wav",
       "CachePath": "6B/{6B59A4B5-B4F0-D887-6592-4B77A321FFCE}.wem"
+     },
+     {
+      "Id": "910635151",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "calamity3.wav",
+      "CachePath": "B4/{B48D9AEA-BF56-20D1-A20E-0A71DCF4AA7D}.wem"
      },
      {
       "Id": "966956053",
@@ -264,6 +280,26 @@
       "CachePath": "7F/{7FB11FFE-4176-069F-6BCC-B749EA765F86}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "230237365",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Containers\\Dialogue Work Unit\\DX_Calamities\\calamity1\\[Effect Slot [0]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{55578AEF-74B6-41BD-AD5F-1ED26F518F8D}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "338424345",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Containers\\Dialogue Work Unit\\DX_Calamities\\[Effect Slot [0]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{ED09C9B5-3A02-4E53-843B-752A6DABBCE9}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2925139897",
@@ -326,18 +362,67 @@
       "DurationMax": "0"
      },
      {
-      "Id": "567901711",
-      "Name": "Play_Hippo01",
-      "ObjectPath": "\\Events\\Default Work Unit\\TEST\\Play_Hippo01",
-      "GUID": "{AB967AE8-596E-40CA-A0FD-36E3B2E290B9}",
+      "Id": "3267011053",
+      "Name": "Play_SFX_Calamity1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity1",
+      "GUID": "{D0C70947-C966-4B25-A884-931BC9B86A15}",
       "DurationType": "OneShot",
-      "DurationMin": "207.50313",
-      "DurationMax": "207.50313",
+      "DurationMin": "18.306292",
+      "DurationMax": "18.306292",
       "MediaRefs": [
        {
-        "Id": "890992138"
+        "Id": "243111488"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "230237365"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3267011054",
+      "Name": "Play_SFX_Calamity2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity2",
+      "GUID": "{F176A201-8E76-4271-860C-9B8DCF1E7C67}",
+      "DurationType": "OneShot",
+      "DurationMin": "32.634876",
+      "DurationMax": "32.634876",
+      "MediaRefs": [
+       {
+        "Id": "458275108"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "338424345"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3267011055",
+      "Name": "Play_SFX_Calamity3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity3",
+      "GUID": "{4B357694-9C9A-4618-B6A2-6F9B66877A5E}",
+      "DurationType": "OneShot",
+      "DurationMin": "13.430312",
+      "DurationMax": "13.430312",
+      "MediaRefs": [
+       {
+        "Id": "910635151"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "338424345"
+        }
+       ]
+      }
      },
      {
       "Id": "2147643290",
@@ -786,6 +871,6 @@
     ]
    }
   ],
-  "FileHash": "{76B78DE3-6FE7-067B-F3BA-B46957481FAB}"
+  "FileHash": "{673A52DC-8543-7B11-ED8F-246220E352A8}"
  }
 }

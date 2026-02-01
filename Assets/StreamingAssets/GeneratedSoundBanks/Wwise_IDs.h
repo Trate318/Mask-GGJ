@@ -18,7 +18,9 @@ namespace AK
         static const AkUniqueID PLAY_DX_BOSSTALKING3 = 2925139899U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_AWFUL = 1822738380U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_GREAT = 3315181258U;
-        static const AkUniqueID PLAY_HIPPO01 = 567901711U;
+        static const AkUniqueID PLAY_SFX_CALAMITY1 = 3267011053U;
+        static const AkUniqueID PLAY_SFX_CALAMITY2 = 3267011054U;
+        static const AkUniqueID PLAY_SFX_CALAMITY3 = 3267011055U;
         static const AkUniqueID PLAY_SFX_CAMERASHUTTER = 2147643290U;
         static const AkUniqueID PLAY_SFX_CDEJECT = 125881202U;
         static const AkUniqueID PLAY_SFX_EMAILSOUND = 3552864623U;

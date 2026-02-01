@@ -3,7 +3,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	226384019	Play_SFX_Keyboard_Clicks			\Default Work Unit\SFX Events\Play_SFX_Keyboard_Clicks	
 	275305017	Play_SFX_MouseClick			\Default Work Unit\SFX Events\Play_SFX_MouseClick	
 	387600705	Play_SFX_Redaction			\Default Work Unit\SFX Events\Play_SFX_Redaction	
-	567901711	Play_Hippo01			\Default Work Unit\TEST\Play_Hippo01	
 	787775641	Play_SFX_Voicemail			\Default Work Unit\SFX Events\Play_SFX_Voicemail	
 	1188967414	Play_SFX_ThrowEnvelope			\Default Work Unit\SFX Events\Play_SFX_ThrowEnvelope	
 	1412408856	Play_SFX_PhoneRingtone			\Default Work Unit\SFX Events\Play_SFX_PhoneRingtone	
@@ -21,6 +20,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	2925139899	Play_DX_BossTalking3			\Default Work Unit\Dialogue Events\Play_DX_BossTalking3	
 	3165068674	Set_State_Story3			\Default Work Unit\Music Events\Set_State_Story3	
 	3165068675	Set_State_Story2			\Default Work Unit\Music Events\Set_State_Story2	
+	3267011053	Play_SFX_Calamity1			\Default Work Unit\Dialogue Events\Play_SFX_Calamity1	
+	3267011054	Play_SFX_Calamity2			\Default Work Unit\Dialogue Events\Play_SFX_Calamity2	
+	3267011055	Play_SFX_Calamity3			\Default Work Unit\Dialogue Events\Play_SFX_Calamity3	
 	3315181258	Play_DX_BossTalking_Great			\Default Work Unit\Dialogue Events\Play_DX_BossTalking_Great	
 	3552864623	Play_SFX_EmailSound			\Default Work Unit\SFX Events\Play_SFX_EmailSound	
 	4001407930	Play_SFX_SharpieDraw			\Default Work Unit\SFX Events\Play_SFX_SharpieDraw	
@@ -41,6 +43,10 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1145265470	RTPC_DialogueDucking			\RTPCs\RTPC_DialogueDucking	
 
+Effect plug-ins	ID	Name	Type				Notes
+	230237365	Compressor (Custom)	Wwise Compressor			
+	338424345	Compressor (Custom)	Wwise Compressor			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20192231	AMB_Roomtone	.cache\A4\{A464ECEE-23C7-F554-5510-309C91D497CB}.wem		\Containers\Ambience Work Unit\AMB_Roomtone\AMB_Roomtone		7913360
 	46719167	mx_ambience_v01	.cache\A9\{A91D9533-94A7-911E-8A6C-C520D38926C5}.wem		\Containers\Music Work Unit\Main Switch\Gameplay Switch\MX_Track1\mx_ambience_v01\mx_ambience_v01		16649236
@@ -48,6 +54,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	85331106	DX_BossTalking3	.cache\BF\{BF3E7B4E-84D4-476D-4177-A9517F4F993E}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking3		4214896
 	146276237	KeyboardClick#4	.cache\D1\{D18F2DC3-A7E0-2949-B04A-202423B5423D}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#4		30098
 	195351453	KeyboardClick#3	.cache\30\{303D80E3-1F9D-FDFE-6862-07D1DED653FB}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#3		12098
+	243111488	calamity1	.cache\B1\{B1928832-DC46-A30E-0E55-4266711A8C85}.wem		\Containers\Dialogue Work Unit\DX_Calamities\calamity1		3514904
 	310804727	Envelope_Thud #1 V2	.cache\4E\{4E904673-D215-5913-7875-2F62C9959311}.wem		\Containers\SFX Work Unit\SFX_ThrowEnvelope\Envelope_Thud #1 V2		66098
 	322443982	SFX_Redaction	.cache\02\{02C85F86-1FCB-9A50-2A2C-0E180A22D27E}.wem		\Containers\SFX Work Unit\SFX_Redaction\SFX_Redaction		383996
 	353242795	Phone_Putdown V2	.cache\12\{126CE4AA-C293-B5C5-FAD2-D3931BF20BD5}.wem		\Containers\SFX Work Unit\SFX_PutdownPhone\Phone_Putdown V2		84096
@@ -56,6 +63,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	383154395	CD_EjectNoise	.cache\8B\{8BACF596-BBCD-8E85-B301-4F20DEC2D00C}.wem		\Containers\SFX Work Unit\SFX_TakeOutCD\CD_EjectNoise		174098
 	443411171	mx_breakingNews_loop_v01	.cache\E3\{E3C1F271-0F21-E2CA-DD50-A0EDBCA920F8}.wem		\Containers\Music Work Unit\Main Switch\Gameplay Switch\MX_Track2\mx_breakingNews_loop_v01\mx_breakingNews_loop_v01		3541988
 	451089730	Camera_Shutter V2	.cache\DA\{DA498742-F27A-E85E-DEB8-1CA304672688}.wem		\Containers\SFX Work Unit\SFX_CameraShutter\Camera_Shutter V2		178422
+	458275108	calamity2	.cache\36\{36532B42-A094-723B-6020-32437C93EB09}.wem		\Containers\Dialogue Work Unit\DX_Calamities\calamity2		6265992
 	479928004	mx_breakingNews_intro_v01	.cache\1C\{1C6F3290-9666-27D2-1CD9-042664D50F5A}.wem		\Containers\Music Work Unit\Main Switch\Gameplay Switch\MX_Track2\mx_breakingNews_intro_v01\mx_breakingNews_intro_v01		2624544
 	562037723	MouseClick#1	.cache\69\{696E93DC-A1AE-9FBC-44E1-22C86053140C}.wem		\Containers\SFX Work Unit\SFX_MouseClick\MouseClick#1		18098
 	563613076	KeyboardClick#5	.cache\5D\{5D1069C8-EEAC-FBBE-A83B-D2513CFC5559}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#5		30098
@@ -67,9 +75,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	832712899	MouseClick#2	.cache\F6\{F6B78C20-43DE-E0F8-ADE4-0C6519666CE0}.wem		\Containers\SFX Work Unit\SFX_MouseClick\MouseClick#2		18098
 	834930096	DX_BossTalking1	.cache\BD\{BDC1CA88-9FE6-2DE3-5A97-381125D868F6}.wem		\Containers\Dialogue Work Unit\DX_BossTalking\DX_BossTalking1		6607388
 	875631644	Phone pick up V3	.cache\C8\{C8AE7A22-2CC6-781A-0D27-F82EAE2E229F}.wem		\Containers\SFX Work Unit\SFX_PickupPhone\Phone pick up V3		176496
-	890992138	Hippo01	.cache\DF\{DF8876B2-63F0-C669-7CB6-E2F12609A4FD}.wem		\Containers\Dialogue Work Unit\DX_Monsters\Hippo01		36603648
 	895913570	KeyboardClick#2	.cache\4D\{4DF9F1B2-12C3-0D3F-273B-E9955B79053B}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#2		18098
 	898373922	SFX_EmailSound	.cache\6B\{6B59A4B5-B4F0-D887-6592-4B77A321FFCE}.wem		\Containers\SFX Work Unit\SFX_EmailSound\SFX_EmailSound		28976
+	910635151	calamity3	.cache\B4\{B48D9AEA-BF56-20D1-A20E-0A71DCF4AA7D}.wem		\Containers\Dialogue Work Unit\DX_Calamities\calamity3		2578716
 	966956053	KeyboardClick#1	.cache\89\{89EF9595-C35B-9D5B-799F-68C00D25B3D9}.wem		\Containers\SFX Work Unit\SFX_Keyboard_Clicks\KeyboardClick#1		12098
 	1001474598	Ringtone	.cache\6F\{6FD84A3F-0822-DBEA-30AC-A446DE0EA038}.wem		\Containers\SFX Work Unit\SFX_CallRingtone\Ringtone		287662
 	1025669392	CD_EjectButton	.cache\7F\{7FB11FFE-4176-069F-6BCC-B749EA765F86}.wem		\Containers\SFX Work Unit\SFX_TakeOutCD\CD_EjectButton		48098
