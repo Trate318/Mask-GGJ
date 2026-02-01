@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Mask-GGJ_WwiseIntegrationTemp.slnx"
+    "dotnet.defaultSolution": "Mask-GGJ.slnx"
 }
