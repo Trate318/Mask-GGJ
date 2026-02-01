@@ -1405,6 +1405,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 882572956}
+        m_TargetAssemblyTypeName: MissionManager, Assembly-CSharp
+        m_MethodName: StartCurrentMission
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &486918827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,6 +1702,55 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!1 &882572955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882572957}
+  - component: {fileID: 882572956}
+  m_Layer: 0
+  m_Name: MissionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882572956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882572955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a8520345719e04284d5bc41ac87d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissionManager
+  telephone: {fileID: 1467191945}
+  MainScreen: {fileID: 918895421}
+  GameScreen: {fileID: 886519002}
+  GameMissions:
+  - {fileID: 11400000, guid: afeebdb905f32694abd7a24d3994d1c8, type: 2}
+--- !u!4 &882572957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882572955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16051, y: 1.06808, z: -0.16883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886519002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,6 +3097,64 @@ RectTransform:
   m_AnchoredPosition: {x: 400, y: 300}
   m_SizeDelta: {x: 800.00006, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1467191943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e087eecb1460d4202bbe8f06207f530f, type: 3}
+  m_PrefabInstance: {fileID: 1963519409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467191945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467191943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964cc17c4b4e0aa48adfced345ce312c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Telephone
+  TelephoneRing:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 46f063f12f905704c9ca1b580c78b1ca, type: 2}
+  TelephoneRingStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bf034b2463d669e4abdb02f0cccdaee2, type: 2}
+  TelephonePickup:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc629b69b6e21ca479120d81a4eee645, type: 2}
+  TelephonePutdown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57ee2fe2f40be8d4d813ea90baacbd3f, type: 2}
+  panningCamera: {fileID: 226660312}
+  DeskAnimator: {fileID: 1467191946}
+  GameMission: {fileID: 0}
+--- !u!95 &1467191946
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467191943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 523f0fd9f647db743827a8ee763acb89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1802822750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3407,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e087eecb1460d4202bbe8f06207f530f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467191946}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e087eecb1460d4202bbe8f06207f530f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467191945}
     - targetCorrespondingSourceObject: {fileID: -3313584797983930372, guid: e087eecb1460d4202bbe8f06207f530f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1087887723}
@@ -3836,3 +3961,4 @@ SceneRoots:
   - {fileID: 1312496851}
   - {fileID: 2030647525531901928}
   - {fileID: 1146824782}
+  - {fileID: 882572957}

@@ -1,14 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
 	125881202	Play_SFX_CDEject			\Default Work Unit\SFX Events\Play_SFX_CDEject	
+	152694884	Pause_DX_Calamity3			\Default Work Unit\Dialogue Events\Pause_DX_Calamity3	
+	152694885	Pause_DX_Calamity2			\Default Work Unit\Dialogue Events\Pause_DX_Calamity2	
+	152694886	Pause_DX_Calamity1			\Default Work Unit\Dialogue Events\Pause_DX_Calamity1	
 	226384019	Play_SFX_Keyboard_Clicks			\Default Work Unit\SFX Events\Play_SFX_Keyboard_Clicks	
 	275305017	Play_SFX_MouseClick			\Default Work Unit\SFX Events\Play_SFX_MouseClick	
 	387600705	Play_SFX_Redaction			\Default Work Unit\SFX Events\Play_SFX_Redaction	
 	787775641	Play_SFX_Voicemail			\Default Work Unit\SFX Events\Play_SFX_Voicemail	
+	1148618688	Play_DX_Calamity1			\Default Work Unit\Dialogue Events\Play_DX_Calamity1	
+	1148618690	Play_DX_Calamity3			\Default Work Unit\Dialogue Events\Play_DX_Calamity3	
+	1148618691	Play_DX_Calamity2			\Default Work Unit\Dialogue Events\Play_DX_Calamity2	
 	1188967414	Play_SFX_ThrowEnvelope			\Default Work Unit\SFX Events\Play_SFX_ThrowEnvelope	
 	1412408856	Play_SFX_PhoneRingtone			\Default Work Unit\SFX Events\Play_SFX_PhoneRingtone	
 	1521187885	StartGame			\Default Work Unit\Level Events\StartGame	
 	1747031839	StopGame			\Default Work Unit\Level Events\StopGame	
 	1822738380	Play_DX_BossTalking_Awful			\Default Work Unit\Dialogue Events\Play_DX_BossTalking_Awful	
+	1837285473	Resume_DX_Calamity1			\Default Work Unit\Dialogue Events\Resume_DX_Calamity1	
+	1837285474	Resume_DX_Calamity2			\Default Work Unit\Dialogue Events\Resume_DX_Calamity2	
+	1837285475	Resume_DX_Calamity3			\Default Work Unit\Dialogue Events\Resume_DX_Calamity3	
 	1862815890	Stop_SFX_PhoneRingtone			\Default Work Unit\SFX Events\Stop_SFX_PhoneRingtone	
 	1988521271	Stop_SFX_Redaction			\Default Work Unit\SFX Events\Stop_SFX_Redaction	
 	2043048033	Play_SFX_PhonePutdown			\Default Work Unit\SFX Events\Play_SFX_PhonePutdown	
@@ -20,9 +29,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2925139899	Play_DX_BossTalking3			\Default Work Unit\Dialogue Events\Play_DX_BossTalking3	
 	3165068674	Set_State_Story3			\Default Work Unit\Music Events\Set_State_Story3	
 	3165068675	Set_State_Story2			\Default Work Unit\Music Events\Set_State_Story2	
-	3267011053	Play_SFX_Calamity1			\Default Work Unit\Dialogue Events\Play_SFX_Calamity1	
-	3267011054	Play_SFX_Calamity2			\Default Work Unit\Dialogue Events\Play_SFX_Calamity2	
-	3267011055	Play_SFX_Calamity3			\Default Work Unit\Dialogue Events\Play_SFX_Calamity3	
 	3315181258	Play_DX_BossTalking_Great			\Default Work Unit\Dialogue Events\Play_DX_BossTalking_Great	
 	3552864623	Play_SFX_EmailSound			\Default Work Unit\SFX Events\Play_SFX_EmailSound	
 	4001407930	Play_SFX_SharpieDraw			\Default Work Unit\SFX Events\Play_SFX_SharpieDraw	
