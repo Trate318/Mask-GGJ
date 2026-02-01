@@ -1826,7 +1826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.93, y: -15}
+  m_AnchoredPosition: {x: 8.5, y: -13.7}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938064412
@@ -2096,6 +2096,7 @@ MonoBehaviour:
   screenCamera: {fileID: 47083824}
   screenCaster: {fileID: 789213867}
   cursorRectTransform: {fileID: 757042020}
+  lerpSpeed: 20
 --- !u!64 &1087887724
 MeshCollider:
   m_ObjectHideFlags: 0

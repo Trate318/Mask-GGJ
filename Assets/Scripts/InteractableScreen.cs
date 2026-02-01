@@ -15,6 +15,7 @@ public class InteractableScreen : MonoBehaviour
 
     private RectTransform canvasRectTransform;
     [SerializeField] private RectTransform cursorRectTransform;
+    [SerializeField] private float lerpSpeed = 20;
 
     private void Awake()
     {
@@ -46,8 +47,8 @@ public class InteractableScreen : MonoBehaviour
                 screenCamera,
                 out var localPoint))
         {
-            Vector3 target = Vector3.Lerp(cursorRectTransform.anchoredPosition, localPoint, Time.deltaTime * 5);
-            cursorRectTransform.anchoredPosition = localPoint;
+            Vector3 target = Vector3.Lerp(cursorRectTransform.anchoredPosition, localPoint, Time.deltaTime * lerpSpeed);
+            cursorRectTransform.anchoredPosition = target;
             
         }
     }
