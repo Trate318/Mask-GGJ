@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0DABAF7A-6DEF-AB7B-1174-8B236F29C67C}",
+    "Hash": "{11A61056-B300-E718-7375-53D5B84B17FF}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -68,45 +68,19 @@
     ],
     "GameParameters": [
      {
-      "Id": "969816968",
-      "Name": "DialogueDucking",
-      "ObjectPath": "\\Game Parameters\\RTPCs\\DialogueDucking",
+      "Id": "1145265470",
+      "Name": "RTPC_DialogueDucking",
+      "ObjectPath": "\\Game Parameters\\RTPCs\\RTPC_DialogueDucking",
       "GUID": "{4180E54D-F2FE-4817-A9EA-BF6BD81B5BC0}"
+     },
+     {
+      "Id": "2582501215",
+      "Name": "RTPC_MasterVolume",
+      "ObjectPath": "\\Game Parameters\\RTPCs\\RTPC_MasterVolume",
+      "GUID": "{1F38E8FA-C88D-49BB-A59E-AC359527ABA0}"
      }
     ],
     "StateGroups": [
-     {
-      "Id": "574587799",
-      "Name": "GameplayStates",
-      "ObjectPath": "\\States\\States\\GameplayStates",
-      "GUID": "{EBCC5A9F-E355-4F7B-A917-6B19464E3ED8}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\States\\GameplayStates\\None",
-        "GUID": "{8DF8B70A-52F4-41E5-8642-41EC71706653}"
-       },
-       {
-        "Id": "949836589",
-        "Name": "Story1",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story1",
-        "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
-       },
-       {
-        "Id": "949836590",
-        "Name": "Story2",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story2",
-        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
-       },
-       {
-        "Id": "949836591",
-        "Name": "Story3",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story3",
-        "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
-       }
-      ]
-     },
      {
       "Id": "777429653",
       "Name": "GameStates",
@@ -132,10 +106,42 @@
         "GUID": "{659319CE-4435-49A4-B065-EB18E57DBCCC}"
        }
       ]
+     },
+     {
+      "Id": "837128579",
+      "Name": "LevelStates",
+      "ObjectPath": "\\States\\States\\LevelStates",
+      "GUID": "{EBCC5A9F-E355-4F7B-A917-6B19464E3ED8}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\LevelStates\\None",
+        "GUID": "{8DF8B70A-52F4-41E5-8642-41EC71706653}"
+       },
+       {
+        "Id": "949836589",
+        "Name": "Story1",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story1",
+        "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
+       },
+       {
+        "Id": "949836590",
+        "Name": "Story2",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story2",
+        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+       },
+       {
+        "Id": "949836591",
+        "Name": "Story3",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story3",
+        "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{0A76EF4A-2FBA-5A04-EE79-A5A99C39991C}"
+  "FileHash": "{5F9C6B14-EB4F-E612-FAB2-1816E487D459}"
  }
 }

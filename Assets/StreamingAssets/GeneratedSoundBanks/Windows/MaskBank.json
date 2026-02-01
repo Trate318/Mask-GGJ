@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{4A640B90-77CF-83D4-035F-47FAA240FD00}",
+    "Hash": "{1A75F0D8-1404-1338-89A8-712A8D1B96CC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -38,6 +38,22 @@
       "Location": "Memory",
       "ShortName": "CD_EjectNoise.wav",
       "CachePath": "8B/{8BACF596-BBCD-8E85-B301-4F20DEC2D00C}.wem"
+     },
+     {
+      "Id": "443411171",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_breakingNews_loop_v01.wav",
+      "CachePath": "E3/{E3C1F271-0F21-E2CA-DD50-A0EDBCA920F8}.wem"
+     },
+     {
+      "Id": "479928004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_breakingNews_intro_v01.wav",
+      "CachePath": "1C/{1C6F3290-9666-27D2-1CD9-042664D50F5A}.wem"
      },
      {
       "Id": "562037723",
@@ -86,9 +102,31 @@
       "Location": "Memory",
       "ShortName": "CD_EjectButton.wav",
       "CachePath": "7F/{7FB11FFE-4176-069F-6BCC-B749EA765F86}.wem"
+     },
+     {
+      "Id": "1067129739",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ANCHOR_1b.wav",
+      "CachePath": "53/{53C93D36-F45A-8D69-4D10-F460B8B87C2F}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "1421248425",
+      "Name": "Play_ANCHOR_1b",
+      "ObjectPath": "\\Events\\Default Work Unit\\TEST\\Play_ANCHOR_1b",
+      "GUID": "{CFD13405-B8B1-4B95-8EC6-597821E7812E}",
+      "DurationType": "OneShot",
+      "DurationMin": "13.808232",
+      "DurationMax": "13.808232",
+      "MediaRefs": [
+       {
+        "Id": "1067129739"
+       }
+      ]
+     },
      {
       "Id": "4255932248",
       "Name": "Play_DX_BossTalking",
@@ -207,7 +245,7 @@
      {
       "Id": "2289732960",
       "Name": "Set_State_Gameplay",
-      "ObjectPath": "\\Events\\Default Work Unit\\Level Events\\Set_State_Gameplay",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music Events\\Set_State_Gameplay",
       "GUID": "{433494CB-EB44-464C-B361-D602C2E464D7}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -231,7 +269,16 @@
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "837128579",
+        "Id": "949836590",
+        "Name": "Story2",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story2",
+        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+       }
+      ]
      },
      {
       "Id": "3165068674",
@@ -244,10 +291,10 @@
       "DurationMax": "0",
       "ActionSetState": [
        {
-        "GroupId": "574587799",
+        "GroupId": "837128579",
         "Id": "949836591",
         "Name": "Story3",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story3",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story3",
         "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
        }
       ]
@@ -268,18 +315,61 @@
         "SwitchValue": {
          "GroupType": "State",
          "GroupId": "777429653",
+         "Id": "2607556080",
+         "GUID": "{F97835F5-577C-4E6B-B625-40A98347A748}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "443411171"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "777429653",
          "Id": "2782712965",
          "GUID": "{659319CE-4435-49A4-B065-EB18E57DBCCC}"
         },
-        "Children": []
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "837128579",
+           "Id": "949836589",
+           "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "443411171"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "837128579",
+           "Id": "949836590",
+           "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "443411171"
+           },
+           {
+            "Id": "479928004"
+           }
+          ]
+         }
+        ]
        }
       ],
       "ActionSetState": [
        {
-        "GroupId": "574587799",
+        "GroupId": "837128579",
         "Id": "949836589",
         "Name": "Story1",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story1",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story1",
         "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
        },
        {
@@ -314,45 +404,13 @@
     ],
     "GameParameters": [
      {
-      "Id": "969816968",
-      "Name": "DialogueDucking",
-      "ObjectPath": "\\Game Parameters\\RTPCs\\DialogueDucking",
+      "Id": "1145265470",
+      "Name": "RTPC_DialogueDucking",
+      "ObjectPath": "\\Game Parameters\\RTPCs\\RTPC_DialogueDucking",
       "GUID": "{4180E54D-F2FE-4817-A9EA-BF6BD81B5BC0}"
      }
     ],
     "StateGroups": [
-     {
-      "Id": "574587799",
-      "Name": "GameplayStates",
-      "ObjectPath": "\\States\\States\\GameplayStates",
-      "GUID": "{EBCC5A9F-E355-4F7B-A917-6B19464E3ED8}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\States\\GameplayStates\\None",
-        "GUID": "{8DF8B70A-52F4-41E5-8642-41EC71706653}"
-       },
-       {
-        "Id": "949836589",
-        "Name": "Story1",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story1",
-        "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
-       },
-       {
-        "Id": "949836590",
-        "Name": "Story2",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story2",
-        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
-       },
-       {
-        "Id": "949836591",
-        "Name": "Story3",
-        "ObjectPath": "\\States\\States\\GameplayStates\\Story3",
-        "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
-       }
-      ]
-     },
      {
       "Id": "777429653",
       "Name": "GameStates",
@@ -378,10 +436,42 @@
         "GUID": "{659319CE-4435-49A4-B065-EB18E57DBCCC}"
        }
       ]
+     },
+     {
+      "Id": "837128579",
+      "Name": "LevelStates",
+      "ObjectPath": "\\States\\States\\LevelStates",
+      "GUID": "{EBCC5A9F-E355-4F7B-A917-6B19464E3ED8}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\LevelStates\\None",
+        "GUID": "{8DF8B70A-52F4-41E5-8642-41EC71706653}"
+       },
+       {
+        "Id": "949836589",
+        "Name": "Story1",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story1",
+        "GUID": "{EDC567EF-B3AB-49DB-8E87-2BF51A9F10C8}"
+       },
+       {
+        "Id": "949836590",
+        "Name": "Story2",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story2",
+        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+       },
+       {
+        "Id": "949836591",
+        "Name": "Story3",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story3",
+        "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{FC03A4B9-63D4-4740-6611-41BC26FD9509}"
+  "FileHash": "{F8886B28-E797-413E-3B97-0E41FC621B81}"
  }
 }

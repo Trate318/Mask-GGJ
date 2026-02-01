@@ -1,15 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	574587799	GameplayStates			\States\GameplayStates	
 	777429653	GameStates			\States\GameStates	
+	837128579	LevelStates			\States\LevelStates	
 
 State	ID	Name	State Group			Notes
-	748895195	None	GameplayStates			
-	949836589	Story1	GameplayStates			
-	949836590	Story2	GameplayStates			
-	949836591	Story3	GameplayStates			
 	748895195	None	GameStates			
 	2607556080	Menu	GameStates			
 	2782712965	Level	GameStates			
+	748895195	None	LevelStates			
+	949836589	Story1	LevelStates			
+	949836590	Story2	LevelStates			
+	949836591	Story3	LevelStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2582501215	RTPC_MasterVolume			\RTPCs\RTPC_MasterVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Main Audio Bus\Ambience	
