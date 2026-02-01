@@ -2,15 +2,29 @@ using UnityEngine;
 
 public class Telephone : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public PanningCamera panningCamera;
+    public Animator DeskAnimator;
+
     void Start()
     {
-        
+        panningCamera.lookingChanged.AddListener(OnLookingChanged);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnLookingChanged(PanningCamera.LookingAt lookingAt)
     {
-        
+        if (lookingAt == PanningCamera.LookingAt.Phone)
+        {
+            
+        }
+    }
+
+    public void StartRinging()
+    {
+        DeskAnimator.Play("Telephone Ring");
+    }
+
+    public void StartCall()
+    {
+        DeskAnimator.StopPlayback();
     }
 }

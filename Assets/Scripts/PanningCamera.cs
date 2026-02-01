@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PanningCamera : MonoBehaviour
@@ -16,11 +17,16 @@ public class PanningCamera : MonoBehaviour
 
     public static bool ChangingView { get; private set; }
 
+    public UnityEvent<LookingAt> lookingChanged;
+
     private void Start()
     {
         camTransform.position = points[1].camPos.position;
         camTransform.rotation = points[1].camPos.rotation;
         Cursor.visible = false;
+
+        if (lookingChanged == null)
+            lookingChanged = new UnityEvent<LookingAt>();
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
@@ -96,6 +102,7 @@ public class PanningCamera : MonoBehaviour
         ChangingView = false;
 
         CurrentPoint = newView;
+        lookingChanged.Invoke(CurrentPoint);
     }
 
     private void MoveCamera()
