@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_ANCHOR_1B = 1421248425U;
-        static const AkUniqueID PLAY_DX_BOSSTALKING = 4255932248U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING1 = 2925139897U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING2 = 2925139898U;
+        static const AkUniqueID PLAY_DX_BOSSTALKING3 = 2925139899U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_AWFUL = 1822738380U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_GREAT = 3315181258U;
         static const AkUniqueID PLAY_HIPPO01 = 567901711U;
@@ -33,6 +34,19 @@ namespace AK
 
     namespace STATES
     {
+        namespace GAMEPLAYSTATES
+        {
+            static const AkUniqueID GROUP = 574587799U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STORY1 = 949836589U;
+                static const AkUniqueID STORY2 = 949836590U;
+                static const AkUniqueID STORY3 = 949836591U;
+            } // namespace STATE
+        } // namespace GAMEPLAYSTATES
+
         namespace GAMESTATES
         {
             static const AkUniqueID GROUP = 777429653U;
@@ -45,25 +59,11 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATES
 
-        namespace LEVELSTATES
-        {
-            static const AkUniqueID GROUP = 837128579U;
-
-            namespace STATE
-            {
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID STORY1 = 949836589U;
-                static const AkUniqueID STORY2 = 949836590U;
-                static const AkUniqueID STORY3 = 949836591U;
-            } // namespace STATE
-        } // namespace LEVELSTATES
-
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_DIALOGUEDUCKING = 1145265470U;
-        static const AkUniqueID RTPC_MASTERVOLUME = 2582501215U;
+        static const AkUniqueID DIALOGUEDUCKING = 969816968U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
