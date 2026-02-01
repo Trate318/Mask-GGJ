@@ -893,6 +893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissionManager
   telephone: {fileID: 1050901358}
+  GameMissions:
+  - {fileID: 11400000, guid: afeebdb905f32694abd7a24d3994d1c8, type: 2}
 --- !u!4 &593063371
 Transform:
   m_ObjectHideFlags: 0
@@ -1762,8 +1764,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 964cc17c4b4e0aa48adfced345ce312c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Telephone
-  panningCamera: {fileID: 0}
+  TelephoneRing:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 81b372d4234776a41abe13cf55700d41, type: 2}
+  panningCamera: {fileID: 1323258367}
   DeskAnimator: {fileID: 1050901359}
+  GameMission: {fileID: 0}
 --- !u!95 &1050901359
 Animator:
   serializedVersion: 7
