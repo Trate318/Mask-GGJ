@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{FE42967C-81D4-8A7B-8860-39A895501832}",
+    "Hash": "{4F478A0B-C673-AABA-BA68-E50FAC944483}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -498,6 +498,6 @@
     ]
    }
   ],
-  "FileHash": "{D382B7BF-E0BC-3468-9209-B954BC2C60A9}"
+  "FileHash": "{52FDE7C5-0B22-A47A-4C25-7930C666874C}"
  }
 }
