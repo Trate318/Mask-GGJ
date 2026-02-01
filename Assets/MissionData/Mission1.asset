@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Mission1
+  m_EditorClassIdentifier: Assembly-CSharp::GameMission
+  BossCallEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9ea307c46f18f434fa65afd745683e43, type: 2}
+  AudioClip:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  BossCallEventDescription: "\u201CHey dude, look, I just sent something over to
+    ya; a little mishap over in LA. Nothing too big for ya, heh. It's just a little
+    icky and I'm kind of squeamish so, if you could remove all the weird bits, you
+    know.   Oh, and remember, our actions should be preeeetty undetectable in the
+    final result. We just had some issues with that other guy and we were forced
+    to uh\u2026. terminate him. haha.  Have this on my desk by Tuesday. (\u2026)
+    Which is now. Do it now.\u201D "
+  AudioClipDescription: 'Woman: Heeyyyy Girl!! So I''m a street photographer; can
+    I get some pictures with you? (grunts of acknowledgement) (shutter clicking rapidly) 
+    (groans and calls for brains) (Shutter noises) (There is a sudden scream, and
+    a chomping noise) END. '
