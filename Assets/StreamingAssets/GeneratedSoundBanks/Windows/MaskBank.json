@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{9D60D3F3-FA5D-17CB-A0C6-D0B7CAB8DE6A}",
+    "Hash": "{D55CF421-FD71-3CFE-4BFD-29A2B0F239E4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "AMB_Roomtone.wav",
       "CachePath": "A4/{A464ECEE-23C7-F554-5510-309C91D497CB}.wem"
+     },
+     {
+      "Id": "46719167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_ambience_v01.wav",
+      "CachePath": "A9/{A91D9533-94A7-911E-8A6C-C520D38926C5}.wem"
      },
      {
       "Id": "54995957",
@@ -174,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "VoicemailBeep.wav",
       "CachePath": "6A/{6A2766B5-D98E-87B3-AF0A-BC3D9C6CFC04}.wem"
+     },
+     {
+      "Id": "778333799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_titleScreen_v01.wav",
+      "CachePath": "A4/{A4B8F377-02B4-4E96-C32F-F2B8C75ED2BA}.wem"
      },
      {
       "Id": "832712899",
@@ -544,7 +560,16 @@
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "837128579",
+        "Id": "949836590",
+        "Name": "Story2",
+        "ObjectPath": "\\States\\States\\LevelStates\\Story2",
+        "GUID": "{FE0CC1AD-CA89-4E3F-A9EB-85061358702F}"
+       }
+      ]
      },
      {
       "Id": "3165068674",
@@ -586,7 +611,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "443411171"
+          "Id": "778333799"
          }
         ]
        },
@@ -607,7 +632,7 @@
           },
           "MediaRefs": [
            {
-            "Id": "443411171"
+            "Id": "46719167"
            }
           ]
          },
@@ -624,6 +649,19 @@
            },
            {
             "Id": "479928004"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "837128579",
+           "Id": "949836591",
+           "GUID": "{ABE98B32-E612-4BE7-8A2D-57B6BA5B4D88}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "46719167"
            }
           ]
          }
@@ -748,6 +786,6 @@
     ]
    }
   ],
-  "FileHash": "{B3E8A580-E25D-37FA-2FF3-2A4F4B664963}"
+  "FileHash": "{E00731B2-A35D-5E33-1B1F-43965DB11559}"
  }
 }
