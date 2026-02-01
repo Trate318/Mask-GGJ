@@ -21,6 +21,7 @@ public class RedactionHandler : MonoBehaviour
 
     public void OnMouseLeft(InputAction.CallbackContext context)
     {
+        if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer) return;
         if (context.started)
         {
             Debug.Log("Started!");
@@ -46,6 +47,8 @@ public class RedactionHandler : MonoBehaviour
 
     public void OnMouseRight(InputAction.CallbackContext context)
     {
+        if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer) return;
+        
         if (context.started)
         {
             List<Section> itemsToRemove = new List<Section>();
@@ -77,6 +80,8 @@ public class RedactionHandler : MonoBehaviour
 
     public void OnPositionUpdate(InputAction.CallbackContext context)
     {
+        if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer) return;
+        
         Vector2 screenPoint = context.ReadValue<Vector2>();
         RectTransform rectTransform = GetComponent<RectTransform>();
 
