@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Actual:
-        m_Texture: {fileID: 2800000, guid: 0eb1659b20911475187dbf0320291994, type: 3}
+        m_Texture: {fileID: 2800000, guid: d317a3fb4e4c04f21acdd80b0ec5b54b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DeskMap:
-        m_Texture: {fileID: 2800000, guid: 0560824cf9d204648aa2d111783315f6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 24d47cc0f07b54ff79c1966a6390de35, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
