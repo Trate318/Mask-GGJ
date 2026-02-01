@@ -12,13 +12,43 @@ public class InteractableScreen : MonoBehaviour
     [SerializeField] private LayerMask raycastMask;
     [SerializeField] private Camera screenCamera;
     [SerializeField] private GraphicRaycaster screenCaster;
+
+    private RectTransform canvasRectTransform;
+    [SerializeField] private RectTransform cursorRectTransform;
+
+    private void Awake()
+    {
+        canvasRectTransform = cursorRectTransform.parent.GetComponent<RectTransform>();
+    }
+
     private void Update()
     {
+        if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer || PanningCamera.ChangingView) {return;}
+        
         Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         if (Physics.Raycast(mouseRay, out RaycastHit hit, 20, raycastMask, QueryTriggerInteraction.Ignore))
         {
             OnCursorInput(hit.textureCoord);
+            DrawCursor(hit.textureCoord);
+        }
+    }
+
+    private void DrawCursor(Vector2 normalisedPosition)
+    {
+        Cursor.visible = false;
+        Vector3 mousePosition = new Vector3(
+            normalisedPosition.x * screenCamera.activeTexture.width,
+            normalisedPosition.y * screenCamera.activeTexture.height, 0);
+
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRectTransform,
+                mousePosition,
+                screenCamera,
+                out var localPoint))
+        {
+            Vector3 target = Vector3.Lerp(cursorRectTransform.anchoredPosition, localPoint, Time.deltaTime * 5);
+            cursorRectTransform.anchoredPosition = localPoint;
+            
         }
     }
     
