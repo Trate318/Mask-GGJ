@@ -711,6 +711,9 @@ MonoBehaviour:
     fov: 13
   - camPos: {fileID: 1355186674}
     fov: 45
+  lookingChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &226660313
 Transform:
   m_ObjectHideFlags: 0
@@ -2050,6 +2053,7 @@ MonoBehaviour:
   screenCaster: {fileID: 789213867}
   cursorRectTransform: {fileID: 757042020}
   lerpSpeed: 20
+  normalizedPoint: {x: 0, y: 0}
 --- !u!64 &1087887724
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2083,6 +2087,8 @@ GameObject:
   - component: {fileID: 1146824782}
   - component: {fileID: 1146824781}
   - component: {fileID: 1146824780}
+  - component: {fileID: 1146824784}
+  - component: {fileID: 1146824783}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2155,6 +2161,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146824783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146824779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5d5e77af8aa4a8a945d8fe146b8d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bb671a6cd822a41459dad9b94f11df10, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1146824784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146824779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d05d950ed61340e8bdb1d139d017a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1221349485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,6 +3414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7a8f6449f40ce4280951ff7379420e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedactionHandler
+  interactableScreen: {fileID: 0}
   RedactionGameObject: {fileID: 1331474438567543251, guid: ce3f938226c1c67429b44c9986dbdc64, type: 3}
   goalHandler: {fileID: 0}
 --- !u!114 &7465326939330624286
@@ -3399,6 +3459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7a8f6449f40ce4280951ff7379420e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedactionHandler
+  interactableScreen: {fileID: 0}
   RedactionGameObject: {fileID: 1331474438567543251, guid: 2adb21ad25d268e4f9391c08a5efbdf6, type: 3}
   goalHandler: {fileID: 0}
 --- !u!224 &7726403326730331905
