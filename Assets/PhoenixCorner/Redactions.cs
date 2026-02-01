@@ -5,13 +5,19 @@ using System;
 
 // all time units are in miliseconds unless specified.
 
-public class AudioClip
+public class Mission
 {
-    public String audioPath;
+    public String PhoneCallSource;
+    public String AudioClipSource;
+    public Redactions CurrentRedactions;
+    public Redactions GoalRedactions;
 
-    public int GetLength() { return 0; }
+    public int Length => 1000;
 
+    public Mission()
+    {
 
+    }
 }
 
 public class Redactions
@@ -24,9 +30,21 @@ public class Redactions
         Sections = new List<Section>();
     }
 
-    //TODO: merge any overlapping sections on add
     public void AddSection(Section section)
     {
+        // attempt combine any overlapping sections recursively
+        for (int i = 0; i < Sections.Count; i++)
+        {
+            Section currentSection = Sections[i];
+
+            if (currentSection.IsSectionOverlapping(section))
+            {
+                RemoveSection(currentSection);
+                AddSection(section.Add(currentSection));
+                return;
+            }
+        }
+
         Sections.Add(section);
     }
 
@@ -60,15 +78,79 @@ public class Redactions
 
         return result;
     }
+
+    public int ORLengthDifference(Redactions redactions)
+    {
+        int total = 0;
+
+        foreach (Section sectionA in Sections)
+        {
+            total += sectionA.Length;
+
+            foreach (Section sectionB in redactions.Sections)
+            {
+                total -= sectionA.ANDLengthDifference(sectionB);
+            }
+        }
+
+        foreach (Section sectionB in redactions.Sections)
+        {
+            total += sectionB.Length;
+
+            foreach (Section sectionA in Sections)
+            {
+                total -= sectionB.ANDLengthDifference(sectionA);
+            }
+        }
+
+        return total;
+    }
+
+    public Redactions OR(Redactions redactions, Redactions workingRedactions = null)
+    {
+        if (workingRedactions == null)
+        {
+            workingRedactions = new Redactions();
+
+            foreach (Section section in redactions.Sections)
+            {
+                workingRedactions.AddSection(new Section(section.Start, section.Length));
+            }
+        }
+
+        foreach (Section sectionA in Sections)
+        {
+            foreach (Section sectionB in workingRedactions.Sections)
+            {
+                if (sectionA.OR(sectionB, out List<Section> result))
+                {
+                    workingRedactions.RemoveSection(sectionA);
+                    workingRedactions.RemoveSection(sectionB);
+                    foreach (Section r in result)
+                    {
+                        workingRedactions.AddSection(r);
+                    }
+
+                    OR(redactions, workingRedactions);
+                }
+            }
+        }
+
+        return workingRedactions;
+    }
 }
 
-public struct Section
+public class Section
 {
     // start and length should be positive only
 
     public int Start;
     public int Length;
-    public int End => Start + Length;
+    public int End
+    {
+        get => Start + Length;
+        set => Length = Math.Max(0, value - Start);
+    }
 
     public Section(int start, int length)
     {
@@ -91,6 +173,50 @@ public struct Section
         }
 
         return SectionByEnd(Mathf.Min(Start, section.Start), Mathf.Max(End, section.End));
+    }
+
+    public void Clamp(int maxSize)
+    {
+        int newStart = Math.Max(0, Start);
+        Length += Start - newStart;
+        Start = newStart;
+        End = Math.Min(maxSize, End);
+    }
+
+    public int ANDLengthDifference(Section section)
+    {
+        if (!IsSectionOverlapping(section)) { return 0; }
+        return Math.Min(End, section.End) - Math.Max(Start, section.Start);
+    }
+
+    public int ORLengthDifference(Section section)
+    {
+        if (!IsSectionOverlapping(section)) { return Length + section.Length; }
+        return Math.Abs(Start - section.Start) + Math.Abs(End - section.End);
+    }
+
+    public bool OR(Section section, out List<Section> result)
+    {
+        result = new List<Section>();
+
+        if (!IsSectionOverlapping(section)) //if not overlapping return this section
+        {
+            return false;
+        }
+
+        Section beforeSection = new Section(Math.Min(Start, section.Start), Math.Abs(Start - section.Start));
+        Section afterSection = Section.SectionByEnd(Math.Max(End, section.End), Math.Abs(End - section.End));
+
+        if (beforeSection.Length > 0)
+        {
+            result.Add(beforeSection);
+        }
+        if (afterSection.Length > 0)
+        {
+            result.Add(afterSection);
+        }
+
+        return true;
     }
 
     public List<Section> Subtract(Section section)

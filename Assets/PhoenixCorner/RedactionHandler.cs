@@ -7,9 +7,13 @@ public class RedactionHandler : MonoBehaviour
 {
     public GameObject RedactionGameObject;
 
+    public RedactionHandler goalHandler;
+
     List<GameObject> RedactionObjects;
 
     Redactions Redactions;
+
+    int MaxLength = 500;
 
     Vector2 localPoint;
 
@@ -26,11 +30,15 @@ public class RedactionHandler : MonoBehaviour
         if (context.canceled)
         {
             Debug.Log($"Cancelled! {startPoint} {(int)localPoint.x}");
-            Redactions.AddSection(Section.SectionByEnd(startPoint, (int)localPoint.x));
-            foreach (Section section in Redactions.Sections)
+            Section newSection = Section.SectionByEnd(startPoint, (int)localPoint.x);
+            newSection.Clamp(MaxLength);
+
+            if (newSection.Length > 0)
             {
-                Debug.Log(section);
+                Redactions.AddSection(newSection);
             }
+
+            Debug.Log($"DIFFERENCE { Redactions.ORLengthDifference(goalHandler.Redactions) }");
 
             DrawSections();
         }
@@ -52,11 +60,18 @@ public class RedactionHandler : MonoBehaviour
 
             foreach (Section section in itemsToRemove)
             {
-                Debug.Log("REMOVE REMOVE");
                 Redactions.RemoveSection(section);
             }
 
             DrawSections();
+
+            // if (goalHandler != null)
+            // {
+            //     Redactions result = Redactions.OR(goalHandler.Redactions);
+
+            //     goalHandler.Redactions = result;
+            //     goalHandler.DrawSections();
+            // }
         }
     }
 
@@ -85,7 +100,12 @@ public class RedactionHandler : MonoBehaviour
     void Start()
     {
         Redactions = new Redactions();
-        Redactions.AddSection(new Section(15, 300));
+
+        if (goalHandler == null)
+        {
+            Redactions.AddSection(new Section(50, 100));
+            Redactions.AddSection(new Section(200, 100));
+        }
 
         DrawSections();
     }
