@@ -11,72 +11,59 @@ public class PanningCamera : MonoBehaviour
     [SerializeField] private float lookSens;
     [SerializeField] private Transform camTransform;
     [SerializeField] private CameraPoint[] points; //nothing0 //camera1 // phone2
-    private LookingAt currentPoint = LookingAt.Nothing;
+    public static LookingAt CurrentPoint { get; private set; } = LookingAt.Computer;
     private float camMovement;
 
-    private bool changingView;
+    public static bool ChangingView { get; private set; }
 
     private void Start()
     {
-        camTransform.position = points[0].camPos.position;
-        camTransform.rotation = points[0].camPos.rotation;
+        camTransform.position = points[1].camPos.position;
+        camTransform.rotation = points[1].camPos.rotation;
+        Cursor.visible = false;
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
-        if (changingView || !ctx.started) return;
+        if (ChangingView || !ctx.started) return;
 
         Vector2 moveDir = ctx.ReadValue<Vector2>();
         
-        switch (currentPoint)
+        switch (CurrentPoint)
         {
             case LookingAt.Computer:
                 if (moveDir.x < -.5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[2], .5f));
-                    currentPoint = LookingAt.Phone;
+                    StartCoroutine(LerpToCameraPoint(points[2], .5f, LookingAt.Phone));
                 }
 
                 if (moveDir.y < -.5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[0], .5f));
-                    currentPoint = LookingAt.Nothing;
+                    StartCoroutine(LerpToCameraPoint(points[0], .5f, LookingAt.Nothing));
                 }
                 break;
             case LookingAt.Phone:
                 if (moveDir.x > .5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[1], .5f));
-                    currentPoint = LookingAt.Computer;
+                    StartCoroutine(LerpToCameraPoint(points[1], .5f, LookingAt.Computer));
                 }
 
                 if (moveDir.y < -.5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[0], .5f));
-                    currentPoint = LookingAt.Nothing;
+                    StartCoroutine(LerpToCameraPoint(points[0], .5f, LookingAt.Nothing));
                 }
                 break;
             case LookingAt.Nothing:
                 if (moveDir.x < -.5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[2], .5f));
-                    currentPoint = LookingAt.Phone;
+                    StartCoroutine(LerpToCameraPoint(points[2], .5f, LookingAt.Phone));
                 }
 
                 if (moveDir.y > .5 || moveDir.x > .5)
                 {
-                    StartCoroutine(LerpToCameraPoint(points[1], .5f));
-                    currentPoint = LookingAt.Computer;
+                    StartCoroutine(LerpToCameraPoint(points[1], .5f, LookingAt.Computer));
                 }
                 break;
-        }
-    }
-
-    public void OnSpacePressed(InputAction.CallbackContext ctx) 
-    {
-        if (ctx.started)
-        {
-            StartCoroutine(LerpToCameraPoint(points[0], .5f));
         }
     }
 
@@ -85,9 +72,9 @@ public class PanningCamera : MonoBehaviour
         MoveCamera();
     }
 
-    IEnumerator LerpToCameraPoint(CameraPoint point, float duration)
+    IEnumerator LerpToCameraPoint(CameraPoint point, float duration, LookingAt newView)
     {
-        changingView = true;
+        ChangingView = true;
         Camera cam = camTransform.GetComponent<Camera>();
         Vector3 pos = camTransform.position;
         Quaternion rot = camTransform.rotation;
@@ -106,7 +93,9 @@ public class PanningCamera : MonoBehaviour
         camTransform.position = point.camPos.position;
         camTransform.rotation = point.camPos.rotation;
         cam.fieldOfView = point.fov;
-        changingView = false;
+        ChangingView = false;
+
+        CurrentPoint = newView;
     }
 
     private void MoveCamera()
@@ -121,12 +110,15 @@ public class PanningCamera : MonoBehaviour
         public float fov;
     }
 
-    private enum LookingAt
+    public enum LookingAt
     {
         Computer,
         Nothing,
         Phone,
     }
-    
-    
+
+    public void PanToDefault()
+    {
+        StartCoroutine(LerpToCameraPoint(points[0], .5f, LookingAt.Nothing));
+    }
 }
