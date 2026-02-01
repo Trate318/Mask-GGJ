@@ -79,10 +79,10 @@ public class RedactionHandler : MonoBehaviour
         }
     }
 
-    public void OnPositionUpdate(InputAction.CallbackContext context)
+    public void OnPositionUpdateHELLO(InputAction.CallbackContext context)
     {
-        if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer) return;
 
+        Debug.Log(context.ReadValue<Vector2>());
         Vector2 screenPoint = interactableScreen.normalizedPoint;
         RectTransform rectTransform = GetComponent<RectTransform>();
 

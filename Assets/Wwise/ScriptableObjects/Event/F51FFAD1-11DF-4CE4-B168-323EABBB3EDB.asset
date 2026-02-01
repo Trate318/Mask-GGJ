@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d8c83d0403c46cfb2569a0c3a2271a, type: 3}
+  m_Name: F51FFAD1-11DF-4CE4-B168-323EABBB3EDB
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_SFX_Voicemail
+  id: 787775641
+  guid: F51FFAD1-11DF-4CE4-B168-323EABBB3EDB
+  IsInUserDefinedSoundBank: 1
