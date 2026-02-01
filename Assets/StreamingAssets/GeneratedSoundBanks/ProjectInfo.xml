@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="MASK_Wwise_Project" GUID="{EA935E27-799D-4B6F-AE47-44A81D2781A8}" Generator="2025.1.4.9062"/>
+	<CacheRoot>../../../../../WwiseProjects/MASK_Wwise_Project/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{FF58623B-23C9-4C68-8AA7-C29503C3E3A0}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="."/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{5DE61C2D-E4EB-451C-9D26-1346C1E73D3F}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{2377411D-53AA-0B43-0131-EF29FD086E9E}</FileHash>
+</ProjectInfo>
