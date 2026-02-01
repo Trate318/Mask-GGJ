@@ -5,6 +5,7 @@ using UnityEngine.SocialPlatforms;
 
 public class RedactionHandler : MonoBehaviour
 {
+    [SerializeField] private InteractableScreen interactableScreen;
     public GameObject RedactionGameObject;
 
     public RedactionHandler goalHandler;
@@ -13,7 +14,7 @@ public class RedactionHandler : MonoBehaviour
 
     Redactions Redactions;
 
-    int MaxLength = 500;
+    int MaxLength = 150;
 
     Vector2 localPoint;
 
@@ -39,7 +40,7 @@ public class RedactionHandler : MonoBehaviour
                 Redactions.AddSection(newSection);
             }
 
-            Debug.Log($"DIFFERENCE { Redactions.ORLengthDifference(goalHandler.Redactions) }");
+            // Debug.Log($"DIFFERENCE { Redactions.ORLengthDifference(goalHandler.Redactions) }");
 
             DrawSections();
         }
@@ -81,11 +82,12 @@ public class RedactionHandler : MonoBehaviour
     public void OnPositionUpdate(InputAction.CallbackContext context)
     {
         if (PanningCamera.CurrentPoint != PanningCamera.LookingAt.Computer) return;
-        
-        Vector2 screenPoint = context.ReadValue<Vector2>();
+
+        Vector2 screenPoint = interactableScreen.normalizedPoint;
         RectTransform rectTransform = GetComponent<RectTransform>();
 
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, screenPoint, Camera.main, out Vector2 output))
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, screenPoint, 
+                interactableScreen.screenCamera, out Vector2 output))
         {
             output += rectTransform.sizeDelta / 2;
             localPoint = output;
@@ -105,13 +107,6 @@ public class RedactionHandler : MonoBehaviour
     void Start()
     {
         Redactions = new Redactions();
-
-        if (goalHandler == null)
-        {
-            Redactions.AddSection(new Section(50, 100));
-            Redactions.AddSection(new Section(200, 100));
-        }
-
         DrawSections();
     }
 

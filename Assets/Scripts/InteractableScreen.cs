@@ -10,12 +10,14 @@ public class InteractableScreen : MonoBehaviour
     List<GameObject> dragTargets = new List<GameObject>();
 
     [SerializeField] private LayerMask raycastMask;
-    [SerializeField] private Camera screenCamera;
+    public Camera screenCamera;
     [SerializeField] private GraphicRaycaster screenCaster;
 
     private RectTransform canvasRectTransform;
     [SerializeField] private RectTransform cursorRectTransform;
     [SerializeField] private float lerpSpeed = 20;
+
+    public Vector2 normalizedPoint = Vector2.zero;
 
     private void Awake()
     {
@@ -59,6 +61,7 @@ public class InteractableScreen : MonoBehaviour
             normalisedPosition.x * screenCamera.activeTexture.width,
             normalisedPosition.y * screenCamera.activeTexture.height, 0);
 
+        normalizedPoint = mousePosition;
         // construct our pointer event
         PointerEventData mouseEvent = new PointerEventData(EventSystem.current);
         mouseEvent.position = mousePosition;
