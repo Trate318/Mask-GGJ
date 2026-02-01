@@ -13,14 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_DX_CALAMITY1 = 152694886U;
+        static const AkUniqueID PAUSE_DX_CALAMITY2 = 152694885U;
+        static const AkUniqueID PAUSE_DX_CALAMITY3 = 152694884U;
         static const AkUniqueID PLAY_DX_BOSSTALKING1 = 2925139897U;
         static const AkUniqueID PLAY_DX_BOSSTALKING2 = 2925139898U;
         static const AkUniqueID PLAY_DX_BOSSTALKING3 = 2925139899U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_AWFUL = 1822738380U;
         static const AkUniqueID PLAY_DX_BOSSTALKING_GREAT = 3315181258U;
-        static const AkUniqueID PLAY_SFX_CALAMITY1 = 3267011053U;
-        static const AkUniqueID PLAY_SFX_CALAMITY2 = 3267011054U;
-        static const AkUniqueID PLAY_SFX_CALAMITY3 = 3267011055U;
+        static const AkUniqueID PLAY_DX_CALAMITY1 = 1148618688U;
+        static const AkUniqueID PLAY_DX_CALAMITY2 = 1148618691U;
+        static const AkUniqueID PLAY_DX_CALAMITY3 = 1148618690U;
         static const AkUniqueID PLAY_SFX_CAMERASHUTTER = 2147643290U;
         static const AkUniqueID PLAY_SFX_CDEJECT = 125881202U;
         static const AkUniqueID PLAY_SFX_EMAILSOUND = 3552864623U;
@@ -33,6 +36,9 @@ namespace AK
         static const AkUniqueID PLAY_SFX_SHARPIEDRAW = 4001407930U;
         static const AkUniqueID PLAY_SFX_THROWENVELOPE = 1188967414U;
         static const AkUniqueID PLAY_SFX_VOICEMAIL = 787775641U;
+        static const AkUniqueID RESUME_DX_CALAMITY1 = 1837285473U;
+        static const AkUniqueID RESUME_DX_CALAMITY2 = 1837285474U;
+        static const AkUniqueID RESUME_DX_CALAMITY3 = 1837285475U;
         static const AkUniqueID SET_STATE_GAMEPLAY = 2289732960U;
         static const AkUniqueID SET_STATE_STORY2 = 3165068675U;
         static const AkUniqueID SET_STATE_STORY3 = 3165068674U;

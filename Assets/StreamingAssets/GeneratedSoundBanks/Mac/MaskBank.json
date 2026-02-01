@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{FCFC6632-406E-E03B-5755-D7D2FD0E3FD4}",
+    "Hash": "{15BFB8EC-980A-CF2A-F138-E538B0E9339D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -302,6 +302,36 @@
     },
     "Events": [
      {
+      "Id": "152694886",
+      "Name": "Pause_DX_Calamity1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Pause_DX_Calamity1",
+      "GUID": "{BF929C2F-96DC-4050-AF71-7083B1990CA2}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "152694885",
+      "Name": "Pause_DX_Calamity2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Pause_DX_Calamity2",
+      "GUID": "{69D2E653-E7B1-4755-87EA-599F5FE4732C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "152694884",
+      "Name": "Pause_DX_Calamity3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Pause_DX_Calamity3",
+      "GUID": "{F590740B-9441-4176-9725-2A5E71BEA42E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "2925139897",
       "Name": "Play_DX_BossTalking1",
       "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_BossTalking1",
@@ -362,9 +392,9 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3267011053",
-      "Name": "Play_SFX_Calamity1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity1",
+      "Id": "1148618688",
+      "Name": "Play_DX_Calamity1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_Calamity1",
       "GUID": "{D0C70947-C966-4B25-A884-931BC9B86A15}",
       "DurationType": "OneShot",
       "DurationMin": "18.306292",
@@ -383,9 +413,9 @@
       }
      },
      {
-      "Id": "3267011054",
-      "Name": "Play_SFX_Calamity2",
-      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity2",
+      "Id": "1148618691",
+      "Name": "Play_DX_Calamity2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_Calamity2",
       "GUID": "{F176A201-8E76-4271-860C-9B8DCF1E7C67}",
       "DurationType": "OneShot",
       "DurationMin": "32.634876",
@@ -404,9 +434,9 @@
       }
      },
      {
-      "Id": "3267011055",
-      "Name": "Play_SFX_Calamity3",
-      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_SFX_Calamity3",
+      "Id": "1148618690",
+      "Name": "Play_DX_Calamity3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Play_DX_Calamity3",
       "GUID": "{4B357694-9C9A-4618-B6A2-6F9B66877A5E}",
       "DurationType": "OneShot",
       "DurationMin": "13.430312",
@@ -617,6 +647,36 @@
         "Id": "677078763"
        }
       ]
+     },
+     {
+      "Id": "1837285473",
+      "Name": "Resume_DX_Calamity1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Resume_DX_Calamity1",
+      "GUID": "{F08F9E87-49AA-4A65-97AD-4EB12032C0D9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1837285474",
+      "Name": "Resume_DX_Calamity2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Resume_DX_Calamity2",
+      "GUID": "{7E981CF6-0B7A-4BA3-BB9C-6B8EF74A0E9A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1837285475",
+      "Name": "Resume_DX_Calamity3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue Events\\Resume_DX_Calamity3",
+      "GUID": "{35FEE968-FE79-4FE4-A741-33AA7869E7B6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2289732960",
@@ -871,6 +931,6 @@
     ]
    }
   ],
-  "FileHash": "{673A52DC-8543-7B11-ED8F-246220E352A8}"
+  "FileHash": "{3B069AF3-1880-1EDB-1EE3-C876D652F7D4}"
  }
 }
