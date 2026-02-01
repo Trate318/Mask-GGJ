@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{05D237B6-1F7A-40A9-B5BC-C6797576E1BE}",
     "Language": "SFX",
-    "Hash": "{4F478A0B-C673-AABA-BA68-E50FAC944483}",
+    "Hash": "{9D60D3F3-FA5D-17CB-A0C6-D0B7CAB8DE6A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MaskBank",
     "ShortName": "MaskBank",
     "Path": "MaskBank.bnk",
@@ -24,6 +24,14 @@
       "CachePath": "A4/{A464ECEE-23C7-F554-5510-309C91D497CB}.wem"
      },
      {
+      "Id": "54995957",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sharpie_Short#2.wav",
+      "CachePath": "90/{90B454C1-5E22-A2BF-B474-8D8E866F3884}.wem"
+     },
+     {
       "Id": "85331106",
       "Language": "SFX",
       "Streaming": "false",
@@ -32,12 +40,60 @@
       "CachePath": "BF/{BF3E7B4E-84D4-476D-4177-A9517F4F993E}.wem"
      },
      {
+      "Id": "146276237",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KeyboardClick#4.wav",
+      "CachePath": "D1/{D18F2DC3-A7E0-2949-B04A-202423B5423D}.wem"
+     },
+     {
+      "Id": "195351453",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KeyboardClick#3.wav",
+      "CachePath": "30/{303D80E3-1F9D-FDFE-6862-07D1DED653FB}.wem"
+     },
+     {
+      "Id": "310804727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Envelope_Thud #1 V2.wav",
+      "CachePath": "4E/{4E904673-D215-5913-7875-2F62C9959311}.wem"
+     },
+     {
       "Id": "322443982",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Redaction.wav",
       "CachePath": "02/{02C85F86-1FCB-9A50-2A2C-0E180A22D27E}.wem"
+     },
+     {
+      "Id": "353242795",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone_Putdown V2.wav",
+      "CachePath": "12/{126CE4AA-C293-B5C5-FAD2-D3931BF20BD5}.wem"
+     },
+     {
+      "Id": "356833069",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sharpie_Long#1.wav",
+      "CachePath": "DC/{DCFC1E9E-9338-2F57-A5FC-B3B7B7BD4A0C}.wem"
+     },
+     {
+      "Id": "364953262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sharpie_Long#2.wav",
+      "CachePath": "B4/{B4C6F5FA-7A49-9AEF-3ECC-D223F1E582AE}.wem"
      },
      {
       "Id": "383154395",
@@ -56,6 +112,14 @@
       "CachePath": "E3/{E3C1F271-0F21-E2CA-DD50-A0EDBCA920F8}.wem"
      },
      {
+      "Id": "451089730",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Camera_Shutter V2.wav",
+      "CachePath": "DA/{DA498742-F27A-E85E-DEB8-1CA304672688}.wem"
+     },
+     {
       "Id": "479928004",
       "Language": "SFX",
       "Streaming": "false",
@@ -70,6 +134,30 @@
       "Location": "Memory",
       "ShortName": "MouseClick#1.wav",
       "CachePath": "69/{696E93DC-A1AE-9FBC-44E1-22C86053140C}.wem"
+     },
+     {
+      "Id": "563613076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KeyboardClick#5.wav",
+      "CachePath": "5D/{5D1069C8-EEAC-FBBE-A83B-D2513CFC5559}.wem"
+     },
+     {
+      "Id": "564325512",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Sharpie_Short#1.wav",
+      "CachePath": "5F/{5FDBB422-695D-4C6E-C551-22F73EFCAB89}.wem"
+     },
+     {
+      "Id": "565890679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Envelope_Thud #2 V2.wav",
+      "CachePath": "73/{73F42DC6-FED0-3E5F-D296-223618BB04A6}.wem"
      },
      {
       "Id": "633817798",
@@ -104,6 +192,14 @@
       "CachePath": "BD/{BDC1CA88-9FE6-2DE3-5A97-381125D868F6}.wem"
      },
      {
+      "Id": "875631644",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Phone pick up V3.wav",
+      "CachePath": "C8/{C8AE7A22-2CC6-781A-0D27-F82EAE2E229F}.wem"
+     },
+     {
       "Id": "890992138",
       "Language": "SFX",
       "Streaming": "false",
@@ -112,12 +208,36 @@
       "CachePath": "DF/{DF8876B2-63F0-C669-7CB6-E2F12609A4FD}.wem"
      },
      {
+      "Id": "895913570",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KeyboardClick#2.wav",
+      "CachePath": "4D/{4DF9F1B2-12C3-0D3F-273B-E9955B79053B}.wem"
+     },
+     {
       "Id": "898373922",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EmailNotification.wav",
       "CachePath": "6B/{6B59A4B5-B4F0-D887-6592-4B77A321FFCE}.wem"
+     },
+     {
+      "Id": "966956053",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KeyboardClick#1.wav",
+      "CachePath": "89/{89EF9595-C35B-9D5B-799F-68C00D25B3D9}.wem"
+     },
+     {
+      "Id": "1001474598",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ringtone.wav",
+      "CachePath": "6F/{6FD84A3F-0822-DBEA-30AC-A446DE0EA038}.wem"
      },
      {
       "Id": "1025669392",
@@ -204,6 +324,20 @@
       ]
      },
      {
+      "Id": "2147643290",
+      "Name": "Play_SFX_CameraShutter",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_CameraShutter",
+      "GUID": "{90ED63AB-5C92-4271-B48D-B29AE2E40596}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8575625",
+      "DurationMax": "1.8575625",
+      "MediaRefs": [
+       {
+        "Id": "451089730"
+       }
+      ]
+     },
+     {
       "Id": "125881202",
       "Name": "Play_SFX_CDEject",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_CDEject",
@@ -235,6 +369,32 @@
       ]
      },
      {
+      "Id": "226384019",
+      "Name": "Play_SFX_Keyboard_Clicks",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_Keyboard_Clicks",
+      "GUID": "{71605CC4-6972-466B-9BE2-826015D63AC6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.12502083",
+      "DurationMax": "0.31252083",
+      "MediaRefs": [
+       {
+        "Id": "146276237"
+       },
+       {
+        "Id": "195351453"
+       },
+       {
+        "Id": "563613076"
+       },
+       {
+        "Id": "895913570"
+       },
+       {
+        "Id": "966956053"
+       }
+      ]
+     },
+     {
       "Id": "275305017",
       "Name": "Play_SFX_MouseClick",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_MouseClick",
@@ -252,6 +412,46 @@
       ]
      },
      {
+      "Id": "2304736210",
+      "Name": "Play_SFX_PhonePickup",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_PhonePickup",
+      "GUID": "{8D28B778-D772-41ED-AE4C-6A0C9FEBE6CB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "875631644"
+       }
+      ]
+     },
+     {
+      "Id": "2043048033",
+      "Name": "Play_SFX_PhonePutdown",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_PhonePutdown",
+      "GUID": "{38268E1C-DABD-47FB-A91A-9CBFF8C4A318}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.875",
+      "DurationMax": "0.875",
+      "MediaRefs": [
+       {
+        "Id": "353242795"
+       }
+      ]
+     },
+     {
+      "Id": "1412408856",
+      "Name": "Play_SFX_PhoneRingtone",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_PhoneRingtone",
+      "GUID": "{4DFB47B8-28FA-4E15-A318-03F82B8D464E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1001474598"
+       }
+      ]
+     },
+     {
       "Id": "387600705",
       "Name": "Play_SFX_Redaction",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_Redaction",
@@ -260,6 +460,46 @@
       "MediaRefs": [
        {
         "Id": "322443982"
+       }
+      ]
+     },
+     {
+      "Id": "4001407930",
+      "Name": "Play_SFX_SharpieDraw",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_SharpieDraw",
+      "GUID": "{C149269D-2C44-41C3-967C-BE7D07F665EA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.18752083",
+      "DurationMax": "0.62502086",
+      "MediaRefs": [
+       {
+        "Id": "54995957"
+       },
+       {
+        "Id": "356833069"
+       },
+       {
+        "Id": "364953262"
+       },
+       {
+        "Id": "564325512"
+       }
+      ]
+     },
+     {
+      "Id": "1188967414",
+      "Name": "Play_SFX_ThrowEnvelope",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Play_SFX_ThrowEnvelope",
+      "GUID": "{63461A80-1367-4F0B-9BD9-45C4DD837727}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.68752086",
+      "DurationMax": "0.68752086",
+      "MediaRefs": [
+       {
+        "Id": "310804727"
+       },
+       {
+        "Id": "565890679"
        }
       ]
      },
@@ -408,6 +648,16 @@
       ]
      },
      {
+      "Id": "1862815890",
+      "Name": "Stop_SFX_PhoneRingtone",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Stop_SFX_PhoneRingtone",
+      "GUID": "{E5826F83-1791-4D48-A441-5B2986086D98}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1988521271",
       "Name": "Stop_SFX_Redaction",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX Events\\Stop_SFX_Redaction",
@@ -498,6 +748,6 @@
     ]
    }
   ],
-  "FileHash": "{71BB1E5E-F271-23C3-BDC1-21D998D5CE35}"
+  "FileHash": "{B3E8A580-E25D-37FA-2FF3-2A4F4B664963}"
  }
 }
