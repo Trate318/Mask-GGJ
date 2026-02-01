@@ -19,15 +19,6 @@ MonoBehaviour:
   AudioClip:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  BossCallEventDescription: "\u201CHey dude, look, I just sent something over to
-    ya; a little mishap over in LA. Nothing too big for ya, heh. It's just a little
-    icky and I'm kind of squeamish so, if you could remove all the weird bits, you
-    know.   Oh, and remember, our actions should be preeeetty undetectable in the
-    final result. We just had some issues with that other guy and we were forced
-    to uh\u2026. terminate him. haha.  Have this on my desk by Tuesday. (\u2026)
-    Which is now. Do it now.\u201D "
-  AudioClipDescription: 'Woman: Heeyyyy Girl!! So I''m a street photographer; can
-    I get some pictures with you? (grunts of acknowledgement) (shutter clicking rapidly) 
-    (groans and calls for brains) (Shutter noises) (There is a sudden scream, and
-    a chomping noise) END. '
+    WwiseObjectReference: {fileID: 11400000, guid: 1b7f38a1a97a5dc49a4d6e4fef5ea4b2, type: 2}
+  BossCallEventDescription: 
+  AudioClipDescription: 
