@@ -5,6 +5,7 @@ using UnityEngine;
 public class MissionManager : MonoBehaviour
 {
     public Telephone telephone;
+    public AudioEditHandler AudioEditHandler;
 
     public GameObject MainScreen;
     public GameObject GameScreen;
@@ -14,6 +15,11 @@ public class MissionManager : MonoBehaviour
     int index = 0;
 
     int errorScore = 0;
+
+    void Start()
+    {
+        StartCurrentMission();
+    }
 
     public void StartNextMission()
     {
@@ -27,6 +33,7 @@ public class MissionManager : MonoBehaviour
     public void StartCurrentMission()
     {
         telephone.GameMission = GameMissions[index];
+        AudioEditHandler.GameMission = GameMissions[index];
         telephone.StartRinging();
 
         MainScreen.SetActive(false);

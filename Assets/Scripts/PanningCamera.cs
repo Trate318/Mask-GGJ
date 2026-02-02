@@ -23,7 +23,7 @@ public class PanningCamera : MonoBehaviour
     {
         camTransform.position = points[1].camPos.position;
         camTransform.rotation = points[1].camPos.rotation;
-        Cursor.visible = false;
+        // Cursor.visible = false;
 
         if (lookingChanged == null)
             lookingChanged = new UnityEvent<LookingAt>();

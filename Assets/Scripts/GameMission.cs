@@ -9,4 +9,5 @@ public class GameMission : ScriptableObject
     public AK.Wwise.Event AudioClip;
     public String BossCallEventDescription;
     public String AudioClipDescription;
+    public Texture AudioClipTexture;
 }

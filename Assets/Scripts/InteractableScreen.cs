@@ -39,7 +39,7 @@ public class InteractableScreen : MonoBehaviour
 
     private void DrawCursor(Vector2 normalisedPosition)
     {
-        Cursor.visible = false;
+        // Cursor.visible = false;
         Vector3 mousePosition = new Vector3(
             normalisedPosition.x * screenCamera.activeTexture.width,
             normalisedPosition.y * screenCamera.activeTexture.height, 0);

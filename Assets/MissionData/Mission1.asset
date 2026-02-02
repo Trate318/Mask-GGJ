@@ -22,3 +22,4 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 1b7f38a1a97a5dc49a4d6e4fef5ea4b2, type: 2}
   BossCallEventDescription: 
   AudioClipDescription: 
+  AudioClipTexture: {fileID: 2800000, guid: 3c50ca02816c609438d01194d2a9ce47, type: 3}
